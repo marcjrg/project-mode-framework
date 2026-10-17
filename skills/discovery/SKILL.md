@@ -1,0 +1,2 @@
+# Discovery skill
+When starting a project: clarify outcome, users, constraints, deliverables, definition of done, deadlines, budget, data sensitivity, and likely unknowns. Ask only questions that materially affect the next decision. Summarize approved vs proposed vs open requirements. Offer alternatives and explain tradeoffs. Do not initialize a repository until its identity/visibility and the initial plan are approved. Produce acceptance criteria with observable checks.
