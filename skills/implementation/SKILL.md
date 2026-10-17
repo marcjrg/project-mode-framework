@@ -1,0 +1,2 @@
+# Implementation skill
+Confirm approved scope, target repo, branch, environment, and available tools. Break work into small verifiable units. Route deterministic tasks to existing code/tools; use AI for judgment and generation. Add dependencies only when justified. Prefer incremental commits and CI. Record what changed, what ran, and which tests passed. Stop for scope changes, spending, publication, or destructive operations.
