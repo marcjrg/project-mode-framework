@@ -1,0 +1,2 @@
+# Quality skill
+Map every acceptance criterion to evidence. Use deterministic tests for schemas, counts, build results, links, and reproducible properties. Use targeted expert review for semantic correctness, ambiguity, safety, or aesthetic judgment. Retry narrowly with a bound; preserve failure details. Report untested areas and unresolved issues. Never label a deliverable verified based solely on plausible appearance.
