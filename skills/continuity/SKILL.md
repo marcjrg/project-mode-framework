@@ -1,0 +1,2 @@
+# Continuity skill
+On resume, verify project repo and read project/state.md first, then only linked requirements/decisions/tasks needed for the current action. Check remote revision. Distinguish approved actions from pending decisions. After each meaningful milestone update state and task files, verify commit/write, and produce a concise handoff. If sync is unavailable, label all changes UNSYNCED and provide artifacts for later upload.
