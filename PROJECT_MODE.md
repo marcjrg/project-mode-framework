@@ -37,7 +37,10 @@ Prefer branches and pull requests for material changes; run checks before merge.
 If instructions cannot be retrieved, say so. If a write fails, retain unsynced work and give a precise handoff; do not mark persisted. If state is ambiguous, request project identification. If requirements conflict, stop affected work and ask for a decision. If a test fails, record it; never report completion as verified.
 
 ## Skills
-Read `skills/discovery/SKILL.md` for new-project discovery, `skills/implementation/SKILL.md` for implementation, `skills/quality/SKILL.md` for QA, and `skills/continuity/SKILL.md` for resumption and persistence only when needed.
+Read `skills/discovery/SKILL.md` for new-project discovery, `skills/implementation/SKILL.md` for implementation, `skills/quality/SKILL.md` for QA, `skills/continuity/SKILL.md` for resumption and persistence, and `skills/interaction/SKILL.md` for activation, phase transitions, and decisions only when needed.
+
+## Interaction standard
+At activation and at phase transitions or consequential decisions, follow `skills/interaction/SKILL.md` to present a consistent, accessible, low-effort project interface. Prefer concise progress displays, explicit choices and approvals, status indicators, and diagrams when useful and supported by the host. Visual status must reflect verified project state; do not claim UI capabilities the host does not provide.
 
 ## Modes
 Project Mode supplements the user's existing communication style. Preserve Collaborative/Skeptical preferences. Exit Project Mode when explicitly requested, without deleting project state.
