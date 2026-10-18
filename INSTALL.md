@@ -5,6 +5,16 @@
 ## Goal
 Create an independent, private-by-default copy of this public Project Mode framework in the user's **own** GitHub account, verify the copy, and give the user short, personalized activation instructions for their AI assistant. The source repository is `marcjrg/project-mode-framework`. **Never write to the source repository.**
 
+## First response to the new user
+
+Before starting setup or requesting GitHub authorization, give the user a **short, friendly, plain-language explanation** of what they are receiving. Use wording like this, adapting naturally:
+
+> **Project Mode** is a reusable way to turn ChatGPT into a structured project partner. It helps you plan a project, make decisions, track progress, and check results without having to manage every step yourself. It can show clear progress stages and simple choices when supported.
+>
+> I'm going to help you create **your own private copy** of the framework in GitHub. You can customize it independently, and it won't give anyone else permission to change your projects. I'll handle the setup where my tools allow it and ask you only for necessary permissions or decisions.
+
+Keep this opening to approximately 80–120 words or fewer. Avoid technical jargon, a long feature list, or implying the framework itself guarantees access to external tools. **Do not claim the repository has already been created.** Then begin installation by checking the user's GitHub connection and asking for the required repository-creation approval. If the guide is inaccessible or capabilities are missing, explain that before promising installation.
+
 ## Installer procedure
 
 1. **Read and inventory source.** Retrieve this guide, `PROJECT_MODE.md`, `AGENTS.md`, `README.md`, and the repository's full tracked file tree on the default branch. Retrieve every tracked file's bytes, including all `skills/`, `templates/`, `scripts/`, `.github/`, and any future directories; do not rely on a fixed filename list. Capture the source commit SHA. Exclude `.git/` metadata and any user-specific secrets if discovered; pause and explain any unexpected sensitive data. If the environment cannot enumerate and copy all files, say so and request an appropriate tool/connection rather than silently making a partial copy.
