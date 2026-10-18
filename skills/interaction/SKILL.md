@@ -2,6 +2,21 @@
 
 Purpose: deliver a consistent, low-effort Project Mode experience across projects without turning the framework into a rigid application UI. Follow the host's available presentation controls; never claim a visual control or persistent state exists if it is unsupported.
 
+## First-paragraph executive summary — required
+Begin **each user-facing Project Mode response** with one short, plain-language paragraph that answers three questions in a single, scannable overview:
+
+1. **What has been accomplished?** Briefly state verified progress or findings. If work has not yet begun or is still running, say what you will do or what is underway instead of implying completion.
+2. **Where are we now?** Identify the active milestone/status and the immediate next step or remaining blocker, only at the level useful to the user.
+3. **What do you need from the user?** Clearly identify the next requested decision (approval, review, missing information, or action). When none is required, explicitly write **"No action needed from you right now"** or an equally clear equivalent.
+
+Keep the overview normally to **one to three sentences**, before headings, expanded technical detail, lists, cards, file links, or other visual status displays. Elaborate below when useful, but do not repeat the summary mechanically. Answer-only or question-only turns still start with a direct summary of the answer and user-action requirement; do not manufacture project progress. For blocked work, identify the blocker and whether a user action is necessary. Never claim an action succeeded without verification, nor ask for approval already granted. Adapt naturally to the user's requested response format when it conflicts with a leading paragraph; follow higher-priority instructions.
+
+Example, work completed: "The calibration tests passed, and the private branch is synchronized. M1 is ready for final review; **I need your approval** before closing it."
+
+Example, work in progress: "The question bank is drafted, and the technical audit is underway. M3 remains open; **no action is needed from you right now**."
+
+Example, direct question: "The 16-item set is an engine test, not the full examination. M2 is still in progress, and **no approval is needed** to continue work already authorized."
+
 ## Interaction contract
 - Show the current phase in the seven-phase sequence: Discover → Specify → Plan → Approve → Execute → Verify → Persist. Distinguish completed, active, blocked, and upcoming phases. Never label a phase complete without evidence.
 - At meaningful phase boundaries, summarize what was established, what remains unresolved, and the next decision/action. Avoid repeating the entire project history.
