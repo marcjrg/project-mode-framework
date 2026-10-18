@@ -2,6 +2,14 @@
 
 A lightweight, approval-driven, GitHub-backed operating framework for AI-assisted projects. Start with [PROJECT_MODE.md](PROJECT_MODE.md). This repository contains operating rules, specialized skills, project templates, and deterministic validation scripts.
 
+## Install Project Mode in your own account
+
+**New here?** Copy this one-line prompt into your AI assistant:
+
+> Install Project Mode for me using https://github.com/marcjrg/project-mode-framework/blob/main/INSTALL.md. Handle setup; ask only when my approval or action is required.
+
+The complete [installation guide](INSTALL.md) tells the assistant to create an independent **private** copy in your GitHub account (after your approval), copy and verify the framework, and generate personalized ChatGPT custom instructions. It must report any missing GitHub write tools instead of claiming the installation succeeded. No access to the original maintainer's account is needed.
+
 ## Activation
 In ChatGPT custom instructions, set `"Project Mode"` to retrieve and follow `https://github.com/marcjrg/project-mode-framework/blob/main/PROJECT_MODE.md`. Explicitly report retrieval failure instead of assuming instructions. Preserve existing Collaborative or Skeptical Mode preferences.
 
