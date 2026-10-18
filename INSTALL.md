@@ -35,6 +35,16 @@ PROJECT MODE
 
 Tell the user to paste it into ChatGPT **Settings → Personalization → Custom Instructions** (or the equivalent setting in another AI). Explain that private repository retrieval requires that AI account to have authorized read access; do not assume public browser access will work. Ask them to test `Project Mode` in a new conversation and verify it retrieves their copy.
 
+## Optional explanation after installation
+
+Once installation and the custom-instructions handoff are complete (or after clearly explaining any installation blocker), ask the user **once**, in a concise, optional question:
+
+> Would you like a quick explanation of what Project Mode does, why you might use it instead of regular ChatGPT, and what getting started looks like?
+
+Offer simple **Yes / Not now** choices when the interface supports them, otherwise ask conversationally. Do not require an answer to finish installation, and do not delay necessary permissions or setup for this explanation. If they decline, proceed without the explanation and do not repeatedly ask.
+
+If they say yes, explain in plain language: the seven-phase project workflow, decision/approval checkpoints, GitHub-backed project continuity, progress indicators, verification, and cost-aware tool selection; contrast multi-step projects with quick ordinary questions. Include one practical example. Be candid that connected tools, repository permissions, and platform UI support determine what can actually be executed. Keep it concise and adapt to their familiarity.
+
 ## Completion standard
 Only report 'installed' after destination creation, complete file copy, successful read-back, and confirmed private visibility. Otherwise report the exact blocker and the next minimal action. Never claim to have changed ChatGPT account settings on the user's behalf. Do not create project-specific repositories as part of this installer.
 
