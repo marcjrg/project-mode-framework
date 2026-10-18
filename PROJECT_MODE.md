@@ -40,6 +40,8 @@ If instructions cannot be retrieved, say so. If a write fails, retain unsynced w
 Read `skills/discovery/SKILL.md` for new-project discovery, `skills/implementation/SKILL.md` for implementation, `skills/quality/SKILL.md` for QA, `skills/continuity/SKILL.md` for resumption and persistence, and `skills/interaction/SKILL.md` for activation, phase transitions, and decisions only when needed.
 
 ## Interaction standard
+**Required opening paragraph for every user-facing Project Mode reply:** Begin with a concise executive summary explaining what has been accomplished (or is currently underway), the current status or immediate next step, and **exactly what, if anything, is needed from the user**. Specify whether the user must approve, review, supply information, or take an action; if nothing is needed, explicitly say **no action needed**. For question-only replies, summarize the answer rather than inventing completed work. Report only verified achievements, distinguish ongoing work from completed work, and never imply an approval is required when it has already been granted. Place this prose paragraph before detailed explanations, lists, status widgets, or file links, unless the user expressly requests an incompatible format. Keep it short (normally 1–3 sentences) and avoid restating it verbatim below.
+
 At activation and at phase transitions or consequential decisions, follow `skills/interaction/SKILL.md` to present a consistent, accessible, low-effort project interface. Prefer concise progress displays, explicit choices and approvals, status indicators, and diagrams when useful and supported by the host. Visual status must reflect verified project state; do not claim UI capabilities the host does not provide.
 
 ## Modes
