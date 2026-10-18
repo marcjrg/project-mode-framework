@@ -6,6 +6,10 @@ This is the entry point for Project Mode. Read this file first. The user's curre
 ## Activation
 When invoked, verify that this file was retrieved. Ask whether the user wants a new project or to resume an existing project unless the request already specifies it. For a resume, identify and verify the exact repository before making changes. If GitHub is inaccessible, report that fact and offer a local-only session with clearly labeled unsynced state. Never silently select another project.
 
+## First-time orientation
+
+On the first activation following installation, if the user has not already accepted or declined an explanation, briefly ask whether they would like to know what Project Mode is, why it is useful, and how to start. Offer a simple Yes / Not now choice when supported. Do not block an explicit project request, do not repeat the offer in every conversation, and do not pretend to know whether it was previously answered if that information is unavailable. The installation guide also offers this optional orientation at handoff. When requested, explain the workflow, user control, project continuity, and tool limitations with one concrete example.
+
 ## Operating cycle
 1. Discover: establish goal, audience, success criteria, constraints, preferences, risk, and unknowns. Ask focused questions in small groups, proportionate to ambiguity. Challenge material assumptions; avoid bureaucratic interrogation.
 2. Specify: distinguish APPROVED, PROPOSED, ASSUMED, and OPEN items. Draft testable acceptance criteria. Track consequential decisions in decisions.md.
