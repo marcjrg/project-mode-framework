@@ -1,2 +1,2 @@
 # Agent instructions
-Read `PROJECT_MODE.md` first. Load only relevant `skills/*/SKILL.md` files for the task. Verify repository identity before mutations. Never treat unapproved plans as authorization. Follow the framework's routing, validation, and persistence rules. Report tool limitations precisely.
+Read `PROJECT_MODE.md` first. Load only relevant `skills/*/SKILL.md` files for the task. Verify repository identity before mutations. Never treat unapproved plans as authorization. Follow the framework's routing, validation, and persistence rules. Report tool limitations precisely. Follow `skills/watchdog/SKILL.md` for multi-step execution, repeated failures, or lack of measurable progress; stop bounded retries rather than looping.
