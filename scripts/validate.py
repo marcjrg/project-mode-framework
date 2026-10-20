@@ -2,7 +2,7 @@
 """Validate required framework files and internal Markdown links (stdlib only)."""
 import pathlib, re, sys
 root = pathlib.Path(sys.argv[1] if len(sys.argv)>1 else '.').resolve()
-required = ['INSTALL.md','skills/interaction/SKILL.md','PROJECT_MODE.md','AGENTS.md','README.md','skills/discovery/SKILL.md','skills/implementation/SKILL.md','skills/quality/SKILL.md','skills/continuity/SKILL.md','templates/README.md','templates/AGENTS.md','templates/project/requirements.md','templates/project/decisions.md','templates/project/state.md','templates/project/tasks.md','templates/project/acceptance.md']
+required = ['INSTALL.md','skills/interaction/SKILL.md','skills/watchdog/SKILL.md','PROJECT_MODE.md','AGENTS.md','README.md','skills/discovery/SKILL.md','skills/implementation/SKILL.md','skills/quality/SKILL.md','skills/continuity/SKILL.md','templates/README.md','templates/AGENTS.md','templates/project/requirements.md','templates/project/decisions.md','templates/project/state.md','templates/project/tasks.md','templates/project/acceptance.md']
 errors=[]
 for rel in required:
     if not (root/rel).is_file(): errors.append('Missing: '+rel)
