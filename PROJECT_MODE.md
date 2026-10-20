@@ -37,11 +37,14 @@ Canonical project files: README.md, AGENTS.md, project/requirements.md, project/
 ## Git and concurrency
 Prefer branches and pull requests for material changes; run checks before merge. Check target repo, branch, and current revision before writing. Resolve concurrent changes rather than overwriting them. Preserve provenance of approvals and results. GitHub stores files/history; execution requires a separate capable runtime. Normal chats do not imply unattended background processing.
 
+## Watchdog and anti-loop safeguards
+During multi-step execution and verification, follow `skills/watchdog/SKILL.md`. Track observable progress, detect equivalent repeated failures and unproductive actions, and perform bounded, materially different recovery. Stop and report a blocked task rather than retry indefinitely. Framework checkpoints occur only when the assistant has control; they cannot interrupt hidden reasoning or a hung tool call. Do not claim an independent background watchdog exists.
+
 ## Recovery
 If instructions cannot be retrieved, say so. If a write fails, retain unsynced work and give a precise handoff; do not mark persisted. If state is ambiguous, request project identification. If requirements conflict, stop affected work and ask for a decision. If a test fails, record it; never report completion as verified.
 
 ## Skills
-Read `skills/discovery/SKILL.md` for new-project discovery, `skills/implementation/SKILL.md` for implementation, `skills/quality/SKILL.md` for QA, `skills/continuity/SKILL.md` for resumption and persistence, and `skills/interaction/SKILL.md` for activation, phase transitions, and decisions only when needed.
+Read `skills/discovery/SKILL.md` for new-project discovery, `skills/implementation/SKILL.md` for implementation, `skills/quality/SKILL.md` for QA, `skills/continuity/SKILL.md` for resumption and persistence, and `skills/interaction/SKILL.md` for activation, phase transitions, and decisions, and `skills/watchdog/SKILL.md` during multi-step execution or when progress stalls; load only when needed.
 
 ## Interaction standard
 **Required opening paragraph for every user-facing Project Mode reply:** Begin with a concise executive summary explaining what has been accomplished (or is currently underway), the current status or immediate next step, and **exactly what, if anything, is needed from the user**. Specify whether the user must approve, review, supply information, or take an action; if nothing is needed, explicitly say **no action needed**. For question-only replies, summarize the answer rather than inventing completed work. Report only verified achievements, distinguish ongoing work from completed work, and never imply an approval is required when it has already been granted. Place this prose paragraph before detailed explanations, lists, status widgets, or file links, unless the user expressly requests an incompatible format. Keep it short (normally 1–3 sentences) and avoid restating it verbatim below.
